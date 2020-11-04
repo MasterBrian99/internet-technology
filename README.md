@@ -6,4 +6,4 @@ Mockup Credits -
 
 ## Design
 
-![png image](Web 1920 – 1.png)
+![png image](https://i.imgur.com/Jj5TJZy.png)
