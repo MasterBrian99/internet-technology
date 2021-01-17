@@ -96,14 +96,18 @@ body {
   color: #cc2559;
 }
 
-.about {
+.about,
+.work,
+.contact {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: 1fr 2fr 1fr;
   height: 100vh;
 }
 
-.about div:nth-child(1) {
+.about div:nth-child(1),
+.work div:nth-child(1),
+.contact div:nth-child(1) {
   position: sticky;
   grid-column: 1/2;
   grid-row: 1/4;
@@ -114,12 +118,16 @@ body {
   align-self: center;
 }
 
-.about div:nth-child(1) h2 {
+.about div:nth-child(1) h2,
+.work div:nth-child(1) h2,
+.contact div:nth-child(1) h2 {
   font-family: "Rochester", cursive;
   grid-row: 2/3;
   grid-column: 1/2;
 }
-.about div:nth-child(2) {
+.about div:nth-child(2),
+.work div:nth-child(2),
+.contact div:nth-child(2) {
   grid-column: 2/3;
   grid-row: 1/4;
   padding: 20px;
@@ -155,4 +163,58 @@ body {
 }
 .about div:nth-child(2) ul li a {
   color: #000;
+}
+.work div:nth-child(1) {
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+.work div:nth-child(2) {
+  background-color: rgba(red, green, blue, 0.5);
+
+  grid-column: 1/2;
+  grid-row: 1/4;
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: changeWork 10s infinite;
+}
+
+@keyframes changeWork {
+  0% {
+    background-image: url("https://anydifferencebetween.com/wp-content/uploads/2016/08/Difference-Between-Custom-Software-and-Utility-Software.jpg");
+  }
+  25% {
+    background-image: url("https://www.npl.co.uk/getmedia/da58a8da-6153-4a03-86fa-13b30b29dc62/software-hdr-d.jpg?width=1920&height=1080&ext=.jpg");
+  }
+  50% {
+    background-image: url("https://helloclue.com/static/app-screenshots-9e52be08886b0416ed3ed284b113b77d.png");
+  }
+  75% {
+    background-image: url("https://i.ytimg.com/vi/peX9k5wMqWk/maxresdefault.jpg");
+  }
+  100% {
+    background-image: url("https://33t2km132djh3q21qa47elmw-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/Good-website-design-725x412.jpg");
+  }
+}
+
+.work div:nth-child(2) h3 {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  align-self: center;
+}
+
+.contact div:nth-child(2) h2 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 3rem;
+}
+.contact div:nth-child(2) ul {
+  text-align: center;
+  list-style: none;
+}
+.contact div:nth-child(2) ul li {
+  font-size: 2rem;
+  margin-top: 30px;
 }

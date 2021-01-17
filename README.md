@@ -1,9 +1,8 @@
 # internet-technology
 
-Mockup Credits -
-- Icons - [Becris,flaticon.com](https://www.flaticon.com/authors/becris)
-- Images -[kbalobanov,unsplash.com](https://unsplash.com/@kbalobanov)
-
 ## Design
 
-![png image](https://i.imgur.com/Jj5TJZy.png)
+![png image]('/images/home.png')
+![png image]('/images/about.png')
+![png image]('/images/work.png')
+![png image]('/images/contact.png')
