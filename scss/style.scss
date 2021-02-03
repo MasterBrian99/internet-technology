@@ -252,7 +252,8 @@ body {
 }
 
 .services {
-  height: 100vh;
+  min-height: 100vh;
+ max-height: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
@@ -297,7 +298,8 @@ body {
 
 
 .contact{
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100%;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -320,6 +322,39 @@ body {
     font-size: 3rem;
     width: 50rem;
 
+  }
+  a {
+    margin-top: 2rem;
+    background-color: #04bf71;
+    animation: moveInButton 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1.5rem 4rem;
+      text-align: center;
+      display: block;
+      border-radius: 10rem;
+      transition: all 0.2s;
+      position: relative;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba(#000, 0.2s);
+
+      &::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
+    &:active {
+      transform: translate(-1px);
+      box-shadow: 0 0.5rem 1rem rgba(#fff, 0.2s);
+    }
   }
 }
 }

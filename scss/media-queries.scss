@@ -48,6 +48,11 @@
     height: 100%;
   
   }
+
+  .contact{
+    height: 100%;
+  
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -123,6 +128,7 @@
 
 @media all and (min-width: 480px) and (max-width: 768px) {
   .home {
+    padding: 1rem;
     nav {
       img {
         margin-left: 50%;
@@ -188,32 +194,53 @@
 
     }
       //services
-  .services{
+
+  .services {
     height: 100%;
     padding: 0;
+    .services-main .services-main__item {
+      margin: 1.3rem;
+      width: 240px;
+      height: 320px;
+      border-radius: 1rem;
+      justify-content: center;
+      text-align: center;
+  
+      img{
+        width: 15rem;
+      }
+  
+      h4{
+        font-size: 2.5rem;
+        color: #04bf71;
+      }
+      p{
+        margin-top: 2rem;
+        font-size: 1.6rem;
+      }
+    }
+  
   }
-  .services .services-main .services-main__item {
-    margin: 1.3rem;
-    width: 240px;
-    height: 320px;
-    border-radius: 1rem;
-    justify-content: center;
-    text-align: center;
-
-    img{
-      width: 15rem;
+  .contact{
+    
+    .contat-from{
+      
+      label{
+        font-size: 2rem;
+      }
+      input{
+        font-size: 2rem;
+        height: 3rem;
+        padding: 1rem;
+        width: 30rem;
+      }
+      textarea{
+        font-size: 2rem;
+        width: 30rem;
+    
+      }
     }
-
-    h4{
-      font-size: 2.5rem;
-      color: #04bf71;
     }
-    p{
-      margin-top: 2rem;
-      font-size: 1.6rem;
-    }
-  }
-
 }
 
 @media all and (max-width: 480px) {
@@ -282,6 +309,51 @@
 
   .services{
     height: 100%;
+    padding: 0;
+    .services-main .services-main__item {
+      margin: 1.3rem;
+      width: 240px;
+      height: 320px;
+      border-radius: 1rem;
+      justify-content: center;
+      text-align: center;
   
+      img{
+        width: 15rem;
+      }
+  
+      h4{
+        font-size: 2.5rem;
+        color: #04bf71;
+      }
+      p{
+        margin-top: 2rem;
+        font-size: 1.6rem;
+      }
+    }
   }
+
+
+
+
+.contact{
+    
+.contat-from{
+  
+  label{
+    font-size: 2rem;
+  }
+  input{
+    font-size: 2rem;
+    height: 3rem;
+    padding: 1rem;
+    width: 30rem;
+  }
+  textarea{
+    font-size: 2rem;
+    width: 30rem;
+
+  }
+}
+}
 }
